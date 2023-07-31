@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/hassan0424/upload_test'
+  s.homepage         = 'https://github.com/hassan0424/shortform-upload-ios'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hassan0424' => 'hassan@shoplive.cloud' }
-  s.source           = { :git => 'https://github.com/hassan0424/upload_test.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/hassan0424/shortform-upload-ios.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'
   s.vendored_frameworks = 'Frameworks/ShopLiveShortformSDK.xcframework'

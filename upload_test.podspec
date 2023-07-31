@@ -9,16 +9,10 @@
 Pod::Spec.new do |s|
   s.name             = 'upload_test'
   s.version          = '1.0.0'
-  s.summary          = 'A short description of upload_test.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'this is for test'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+this is for test
                        DESC
 
   s.homepage         = 'https://github.com/hassan0424/shortform-upload-ios'
@@ -27,6 +21,6 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/hassan0424/shortform-upload-ios.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'
-  s.vendored_frameworks = 'Frameworks/ShopLiveShortformSDK.xcframework'
+  s.vendored_frameworks = 'Frameworks/ShopLiveShortformUploadSDK.xcframework'
 
 end

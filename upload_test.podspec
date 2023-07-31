@@ -16,7 +16,11 @@ this is for test
                        DESC
 
   s.homepage         = 'https://github.com/hassan0424/shortform-upload-ios'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  spec.license = { :type => 'Copyright', :text => <<-LICENSE
+                 Copyright 2021
+                 Permission is granted to...
+                 LICENSE
+              }
   s.author           = { 'hassan0424' => 'hassan@shoplive.cloud' }
   s.source           = { :git => 'https://github.com/hassan0424/shortform-upload-ios.git', :tag => s.version.to_s }
 

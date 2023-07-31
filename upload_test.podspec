@@ -9,14 +9,10 @@
 Pod::Spec.new do |s|
   s.name             = 'upload_test'
   s.version          = '1.0.0'
-  s.summary          = 'this is for test'
+  s.summary          = "ShopLive Shortform Framework for iOS"
 
-  s.description      = <<-DESC
-this is for test
-                       DESC
-
-  s.homepage         = 'https://github.com/hassan0424/shortform-upload-ios'
-  spec.license = { :type => 'Copyright', :text => <<-LICENSE
+  s.homepage         = 'http://shoplive.cloud'
+  s.license = { :type => 'Copyright', :text => <<-LICENSE
                  Copyright 2021
                  Permission is granted to...
                  LICENSE
@@ -24,7 +20,9 @@ this is for test
   s.author           = { 'hassan0424' => 'hassan@shoplive.cloud' }
   s.source           = { :git => 'https://github.com/hassan0424/shortform-upload-ios.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '12.0'
+  s.platform     = :ios
+  s.ios.deployment_target = '12.1'
+  s.swift_version = "5"
   s.vendored_frameworks = 'Frameworks/ShopLiveShortformUploadSDK.xcframework'
 
 end

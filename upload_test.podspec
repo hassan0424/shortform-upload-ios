@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'upload_test'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = "ShopLive Shortform Framework for iOS"
 
   s.homepage         = 'http://shoplive.cloud'

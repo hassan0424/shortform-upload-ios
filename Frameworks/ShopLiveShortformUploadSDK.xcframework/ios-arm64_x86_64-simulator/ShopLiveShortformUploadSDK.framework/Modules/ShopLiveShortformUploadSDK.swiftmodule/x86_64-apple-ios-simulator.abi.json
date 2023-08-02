@@ -32436,322 +32436,322 @@
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 836,
+      "offset": 837,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 1219,
+      "offset": 1220,
       "length": 8,
       "value": "\"camera\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "IntegerLiteral",
-      "offset": 1334,
+      "offset": 1335,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 1375,
+      "offset": 1376,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 1422,
+      "offset": 1423,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "FloatLiteral",
-      "offset": 2020,
+      "offset": 2021,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 2273,
+      "offset": 2274,
       "length": 35,
       "value": "\"picker.warning.duration.min.title\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "IntegerLiteral",
-      "offset": 2861,
+      "offset": 2862,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 2922,
+      "offset": 2923,
       "length": 26,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 2947,
+      "offset": 2948,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 3470,
+      "offset": 3471,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 3590,
+      "offset": 3591,
       "length": 22,
       "value": "\"toast.codec.notvalid\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 3852,
+      "offset": 3853,
       "length": 72,
       "value": "\"-v quiet -print_format json -show_format -show_streams -i \""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 3923,
+      "offset": 3924,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 4305,
+      "offset": 4306,
       "length": 9,
       "value": "\"streams\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 4371,
+      "offset": 4372,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 4493,
+      "offset": 4494,
       "length": 12,
       "value": "\"codec_type\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 4532,
+      "offset": 4533,
       "length": 7,
       "value": "\"video\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 4580,
+      "offset": 4581,
       "length": 12,
       "value": "\"codec_name\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 4689,
+      "offset": 4690,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 4778,
+      "offset": 4779,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "Array",
-      "offset": 4918,
+      "offset": 4919,
       "length": 30,
       "value": "[\"vid.stab\", \"xvidcore\", \"hevc\"]"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 5038,
+      "offset": 5039,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "IntegerLiteral",
-      "offset": 5238,
+      "offset": 5239,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 5262,
+      "offset": 5263,
       "length": 5,
       "value": "\"264\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 5281,
+      "offset": 5282,
       "length": 5,
       "value": "\"265\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 5308,
+      "offset": 5309,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 5338,
+      "offset": 5339,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 5677,
+      "offset": 5678,
       "length": 12,
       "value": "\"Loading...\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 5856,
+      "offset": 5857,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "IntegerLiteral",
-      "offset": 6089,
+      "offset": 6090,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 6303,
+      "offset": 6304,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 6683,
+      "offset": 6684,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 7201,
+      "offset": 7202,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 7714,
+      "offset": 7715,
       "length": 30,
       "value": "\"Invalid input or output URL.\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 8120,
+      "offset": 8121,
       "length": 40,
       "value": "\"Failed to create AVAssetExportSession.\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 9071,
+      "offset": 9072,
       "length": 36,
       "value": "\"Conversion completed successfully.\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 9255,
+      "offset": 9256,
       "length": 17,
       "value": "\"Error: \""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 9271,
+      "offset": 9272,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 9597,
+      "offset": 9598,
       "length": 29,
       "value": "\"toast.cancel.encoding.title\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 10582,
+      "offset": 10583,
       "length": 31,
       "value": "\"alert.permission.denied.title\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 10668,
+      "offset": 10669,
       "length": 37,
       "value": "\"alert.permission.denied.description\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 10763,
+      "offset": 10764,
       "length": 33,
       "value": "\"alert.permission.denied.setting\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "StringLiteral",
-      "offset": 10853,
+      "offset": 10854,
       "length": 32,
       "value": "\"alert.permission.denied.cancel\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 11383,
+      "offset": 11384,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLMediaPicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 11633,
+      "offset": 11634,
       "length": 4,
       "value": "true"
     },
@@ -40626,420 +40626,420 @@
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "FloatLiteral",
-      "offset": 449,
+      "offset": 465,
       "length": 5,
       "value": "720.0"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "FloatLiteral",
-      "offset": 458,
+      "offset": 474,
       "length": 8,
       "value": "100000.0"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "FloatLiteral",
-      "offset": 470,
+      "offset": 486,
       "length": 8,
       "value": "100000.0"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 482,
+      "offset": 498,
       "length": 3,
       "value": "720"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 586,
+      "offset": 602,
       "length": 20,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 602,
+      "offset": 618,
       "length": 1,
       "value": "\":-1\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 609,
+      "offset": 625,
       "length": 20,
       "value": "\"-1:\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 628,
+      "offset": 644,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 980,
+      "offset": 996,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1037,
+      "offset": 1053,
       "length": 13,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1049,
+      "offset": 1065,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 1083,
+      "offset": 1099,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1142,
+      "offset": 1158,
       "length": 13,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1154,
+      "offset": 1170,
       "length": 51,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1204,
+      "offset": 1220,
       "length": 5,
       "value": "\"mp4\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1302,
+      "offset": 1318,
       "length": 253,
       "value": "\"-ss \""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1347,
+      "offset": 1363,
       "length": 1,
       "value": "\" -to \""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 1390,
-      "length": 1,
-      "value": "\" -i \""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
       "offset": 1406,
       "length": 1,
+      "value": "\" -i \""
+    },
+    {
+      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
+      "kind": "StringLiteral",
+      "offset": 1422,
+      "length": 1,
       "value": "\" -preset ultrafast -vf crop=\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1451,
+      "offset": 1467,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1470,
+      "offset": 1486,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1491,
+      "offset": 1507,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1512,
+      "offset": 1528,
       "length": 1,
       "value": "\",scale=\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1532,
+      "offset": 1548,
       "length": 1,
       "value": "\" -y \""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1554,
+      "offset": 1570,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1612,
+      "offset": 1628,
       "length": 241,
       "value": "\"-ss \""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1657,
+      "offset": 1673,
       "length": 1,
       "value": "\" -to \""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
-      "kind": "StringLiteral",
-      "offset": 1700,
-      "length": 1,
-      "value": "\" -i \""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
       "offset": 1716,
       "length": 1,
+      "value": "\" -i \""
+    },
+    {
+      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
+      "kind": "StringLiteral",
+      "offset": 1732,
+      "length": 1,
       "value": "\" -preset ultrafast -filter:v crop='\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1768,
+      "offset": 1784,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1787,
+      "offset": 1803,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1808,
+      "offset": 1824,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1829,
+      "offset": 1845,
       "length": 24,
       "value": "\"' -y \""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1852,
+      "offset": 1868,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1906,
+      "offset": 1922,
       "length": 241,
       "value": "\"-ss \""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1951,
+      "offset": 1967,
       "length": 1,
       "value": "\" -to \""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 1994,
+      "offset": 2010,
       "length": 1,
       "value": "\" -i \""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 2010,
+      "offset": 2026,
       "length": 1,
       "value": "\" -preset ultrafast -filter:v crop='\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 2062,
+      "offset": 2078,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 2081,
+      "offset": 2097,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 2102,
+      "offset": 2118,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 2123,
+      "offset": 2139,
       "length": 24,
       "value": "\"' -y \""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 2146,
+      "offset": 2162,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "BooleanLiteral",
-      "offset": 2674,
+      "offset": 2690,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "BooleanLiteral",
-      "offset": 2819,
+      "offset": 2835,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "BooleanLiteral",
-      "offset": 2845,
+      "offset": 2861,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3057,
+      "offset": 3073,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3104,
+      "offset": 3120,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3454,
+      "offset": 3470,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3509,
+      "offset": 3525,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3825,
+      "offset": 3841,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3971,
+      "offset": 3987,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "BooleanLiteral",
-      "offset": 4209,
+      "offset": 4225,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "BooleanLiteral",
-      "offset": 4595,
+      "offset": 4611,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 4770,
+      "offset": 4786,
       "length": 35,
       "value": "\"Vincent ffmpeg command \""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "StringLiteral",
-      "offset": 4804,
+      "offset": 4820,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 4868,
+      "offset": 4884,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 5836,
+      "offset": 5852,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 5951,
+      "offset": 5967,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLVideoConverter.swift",
       "kind": "IntegerLiteral",
-      "offset": 6037,
+      "offset": 6053,
       "length": 3,
       "value": "100"
     },

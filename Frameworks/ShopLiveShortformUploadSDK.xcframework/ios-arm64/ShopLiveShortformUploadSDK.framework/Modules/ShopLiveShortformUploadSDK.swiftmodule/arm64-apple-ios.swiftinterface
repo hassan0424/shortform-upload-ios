@@ -284,11 +284,6 @@ public struct ShortsModel : ShopliveSDKCommon.BaseResponsable, Swift.Equatable {
   }
   public func encode(to encoder: any Swift.Encoder) throws
 }
-extension ShopLiveShortformUploadSDK.ShortsModel {
-  public var overlayUrl: Foundation.URL? {
-    get
-  }
-}
 @_hasMissingDesignatedInitializers public class ShopLiveShortformUpload {
   public static var sdkVersion: Swift.String
   public static func upload(_ vc: UIKit.UIViewController, permissionHandler: (any ShopliveSDKCommon.ShopLivePermissionHandler)? = nil)

@@ -9519,64 +9519,6 @@
             "implicit": true,
             "throwing": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "overlayUrl",
-            "printedName": "overlayUrl",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.URL?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26ShopLiveShortformUploadSDK11ShortsModelV10overlayUrl10Foundation3URLVSgvp",
-            "mangledName": "$s26ShopLiveShortformUploadSDK11ShortsModelV10overlayUrl10Foundation3URLVSgvp",
-            "moduleName": "ShopLiveShortformUploadSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.URL?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "URL",
-                        "printedName": "Foundation.URL",
-                        "usr": "s:10Foundation3URLV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26ShopLiveShortformUploadSDK11ShortsModelV10overlayUrl10Foundation3URLVSgvg",
-                "mangledName": "$s26ShopLiveShortformUploadSDK11ShortsModelV10overlayUrl10Foundation3URLVSgvg",
-                "moduleName": "ShopLiveShortformUploadSDK",
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
           }
         ],
         "declKind": "Struct",
@@ -34051,132 +33993,6 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 3674,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 3789,
-      "length": 8,
-      "value": "\"shorts\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 3911,
-      "length": 9,
-      "value": "\"userJWT\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4048,
-      "length": 10,
-      "value": "\"guestUid\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4179,
-      "length": 6,
-      "value": "\"adId\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4245,
-      "length": 12,
-      "value": "\"appVersion\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4312,
-      "length": 12,
-      "value": "\"sdkVersion\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4413,
-      "length": 10,
-      "value": "\"safeArea\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4445,
-      "length": 5,
-      "value": "\"top\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4490,
-      "length": 7,
-      "value": "\"right\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4538,
-      "length": 8,
-      "value": "\"bottom\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 4589,
-      "length": 6,
-      "value": "\"left\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5261,
-      "length": 9,
-      "value": "\"payload\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5459,
-      "length": 3,
-      "value": "\"?\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "Dictionary",
-      "offset": 5673,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5746,
-      "length": 4,
-      "value": "\"ak\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5835,
-      "length": 5,
-      "value": "\"jwt\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/Model\/ShortsModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5932,
-      "length": 10,
-      "value": "\"guestUid\""
-    },
-    {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/upload\/SLUpoadInfoController.swift",
       "kind": "StringLiteral",
       "offset": 1077,
@@ -36575,7 +36391,7 @@
       "kind": "StringLiteral",
       "offset": 249,
       "length": 7,
-      "value": "\"1.4.4\""
+      "value": "\"1.5.0\""
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/PublicInterface\/ShopLiveShortformUpload.swift",
@@ -38406,29 +38222,22 @@
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/ConfigAndAuth\/ShortFormConfigurationInfos.swift",
-      "kind": "StringLiteral",
-      "offset": 2744,
-      "length": 6,
-      "value": "\"adId\""
-    },
-    {
-      "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/ConfigAndAuth\/ShortFormConfigurationInfos.swift",
       "kind": "BooleanLiteral",
-      "offset": 3063,
+      "offset": 2944,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/ConfigAndAuth\/ShortFormConfigurationInfos.swift",
       "kind": "BooleanLiteral",
-      "offset": 3235,
+      "offset": 3116,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sangminhan\/matrix-shortform-ios\/matrix-shortform-upload-ios\/matrix-shortform-upload-ios\/sources\/ConfigAndAuth\/ShortFormConfigurationInfos.swift",
       "kind": "BooleanLiteral",
-      "offset": 3353,
+      "offset": 3234,
       "length": 4,
       "value": "true"
     },

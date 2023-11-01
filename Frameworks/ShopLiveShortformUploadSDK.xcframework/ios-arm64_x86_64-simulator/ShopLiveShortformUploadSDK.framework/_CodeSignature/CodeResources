@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		HyoEcEXd34osU3+5tbc3YtN9Ndk=
+		T//9OtZqLae4hbTPd3Btu6ph16I=
 		</data>
 		<key>Headers/ShopLiveShortformUploadSDK-Swift.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CtHO2BQQxosFgbnze4GQDiGZMpM=
+		7Ti4eCvwypZCA1yz4JJYwQlYCcw=
 		</data>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		fD2aU6OQBtRrUhH26fiFTV50SB8=
+		+MUBFQcb6x7W0MzA3m/tRpGcyp8=
 		</data>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/ZzsTwoQGOzIj4m2UmuRJ54rgP4=
+		rjjdFiQ/JYyQAAGyTR0hNRbkYxo=
 		</data>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/ZzsTwoQGOzIj4m2UmuRJ54rgP4=
+		rjjdFiQ/JYyQAAGyTR0hNRbkYxo=
 		</data>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Vw4nEkHh4BQ69ltlhpEqpFwqWDY=
+		6FnupJtuSfvVpGENmKdLQ6lDR0s=
 		</data>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		fD2aU6OQBtRrUhH26fiFTV50SB8=
+		+MUBFQcb6x7W0MzA3m/tRpGcyp8=
 		</data>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		L1kz8LpznfwqK+O6M2GswksYDQc=
+		GUS9Mvw0cW/lOigTkmgF4jKih10=
 		</data>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		L1kz8LpznfwqK+O6M2GswksYDQc=
+		GUS9Mvw0cW/lOigTkmgF4jKih10=
 		</data>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uReRS+GUIorCrTyabVGIfGJWMgM=
+		932O1HURE1GgzuXnvHWVGIdgQxE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>SLCollectionTableViewCell.nib</key>
 		<data>
-		4llUowd+xI29W28uOjASndgOPZg=
+		XHhEI9jieReE46hYx3PNxJqot8w=
 		</data>
 		<key>SLImagePicker.storyboardc/Info.plist</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>SLPhotoCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
-		jWLGqyiZLY+6pkuvNcKhs/D6isE=
+		Wi8U32VfJMDUdIkqI3tPrBRWc4I=
 		</data>
 		<key>SLPhotoCollectionViewCell.nib/runtime.nib</key>
 		<data>
-		jClz+v2tSLit5ll0OzMfXGm2XY4=
+		uE0ZHWDEDncjyxH4V38+An3M5OA=
 		</data>
 		<key>SLPhotosPickerViewController.nib/objects-14.0+.nib</key>
 		<data>
@@ -113,7 +113,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QNdW8n/lyLMjIvdZ/qqI9n3oVGBGuz3CADLfTGlmGk0=
+			TPSny0vrqL/qHQmrYimLXp8VCvIt4LwZnIE4tII9zFk=
 			</data>
 		</dict>
 		<key>Headers/ShopLiveShortformUploadSDK-Swift.h</key>
@@ -134,14 +134,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mvCDVbXRjd7lsJAh73deM5SRSzpQ9mibPD0Oa8IMHY0=
+			eeyumWE1WltKXX4n+kejkeFAqcmNXgza8qk+usBG1Zg=
 			</data>
 		</dict>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wDv8CNsQ20m+Smol2+5XhPw87rbh/TdZbZGflj6Dzqk=
+			KfGMVTg6j4bGSEWLy8vdiH775dlYxHPFTBQxN4o6Z2s=
 			</data>
 		</dict>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -155,28 +155,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wDv8CNsQ20m+Smol2+5XhPw87rbh/TdZbZGflj6Dzqk=
+			KfGMVTg6j4bGSEWLy8vdiH775dlYxHPFTBQxN4o6Z2s=
 			</data>
 		</dict>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t+zOg20n1TpxqnqIBPZusrJY32bQRwcm1cXt6NHsOgg=
+			yE43kB4WyeEyZsRGmIK8D/KFnZpBLGVghGD6MDQcFT4=
 			</data>
 		</dict>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mvCDVbXRjd7lsJAh73deM5SRSzpQ9mibPD0Oa8IMHY0=
+			eeyumWE1WltKXX4n+kejkeFAqcmNXgza8qk+usBG1Zg=
 			</data>
 		</dict>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gwvUUijNOZWGJPw3Yg660brodQt3o+dxAMd0vfCaHS4=
+			2w0CQsFJqQZ1ju25P0ewg+GeviPSezHAcLiGDP8XPWg=
 			</data>
 		</dict>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -190,14 +190,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gwvUUijNOZWGJPw3Yg660brodQt3o+dxAMd0vfCaHS4=
+			2w0CQsFJqQZ1ju25P0ewg+GeviPSezHAcLiGDP8XPWg=
 			</data>
 		</dict>
 		<key>Modules/ShopLiveShortformUploadSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ABfwC0ZMNV6UZOLuEJPxxn8FOB1Lx6CqaZECvaPDSY0=
+			T8rZgdw+YmPmMcmax+5cNhnOJoyIgvikAKq3SvS6FSE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -211,7 +211,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7CJAiKBSn5b+rujSVjj2NyP50B68BUjxC78tB/HgiMQ=
+			XYv/LtbbLQjO6k3i2K8nifro2/G6Vne2cEuCCgYuSPU=
 			</data>
 		</dict>
 		<key>SLImagePicker.storyboardc/Info.plist</key>
@@ -225,14 +225,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YZ6aWaHmyahxBanOVbuHhVZmwbY7qVnD2/DKdLv+u5k=
+			8bJ3uk9qFY+84dfpOZ9d5vCPvFe2T44jAe2xFdjV5Z8=
 			</data>
 		</dict>
 		<key>SLPhotoCollectionViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ALXy2JmNtNJv4e9dCr/3poLaz26Rz0fwhoRXOsR1fx4=
+			i6EUf6cPNju9IzN/bV28RU03ANd8AQU/DzdC5jPdyBM=
 			</data>
 		</dict>
 		<key>SLPhotosPickerViewController.nib/objects-14.0+.nib</key>

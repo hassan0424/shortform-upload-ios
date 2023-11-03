@@ -23,6 +23,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = '12.1'
   s.swift_version = "5"
-  s.vendored_frameworks = 'Frameworks/ShopLiveShortformUploadSDK.xcframework'
+  s.vendored_frameworks = 'Frameworks/ShopLiveShortformEditorSDK.xcframework'
 
 end

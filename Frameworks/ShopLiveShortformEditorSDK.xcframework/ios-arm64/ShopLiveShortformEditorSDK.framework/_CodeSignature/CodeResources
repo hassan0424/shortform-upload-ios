@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		T//9OtZqLae4hbTPd3Btu6ph16I=
+		8L+sLzxgHbEFcWkxbFIkMuDG/jo=
 		</data>
 		<key>Headers/ShopLiveShortformEditorSDK-Swift.h</key>
 		<data>
-		E/8DlTtXAtm6CxeyuoO7pmNB4sg=
+		tpmcnGpcuLqNNKZAUQQ12Mus35M=
 		</data>
 		<key>Headers/matrix_shortform_editor_ios.h</key>
 		<data>
@@ -18,27 +18,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Z8HCcqilfEzJXdsHsPO/IeZTjX0=
+		ToSxQTEsVrE3ti2opH0x/fvk7sY=
 		</data>
 		<key>Modules/ShopLiveShortformEditorSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		+cx+kqq2xWm/DW/5RDj5I1LRPV8=
+		zO8ay6YbuHxk2gKX8wGuPB4u9UU=
 		</data>
 		<key>Modules/ShopLiveShortformEditorSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		4kpYue3Mi7bzi+HfVEpXsowni40=
+		oyEZCwjY7aBUogpBqUWOfwURcMM=
 		</data>
 		<key>Modules/ShopLiveShortformEditorSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		zJ8Y0F4hyigunckePh4VrrUrYsg=
+		Sv4F+izW/+sVO9LmMfN2Hm9yaUA=
 		</data>
 		<key>Modules/ShopLiveShortformEditorSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		4kpYue3Mi7bzi+HfVEpXsowni40=
+		oyEZCwjY7aBUogpBqUWOfwURcMM=
 		</data>
 		<key>Modules/ShopLiveShortformEditorSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		OfulVvo363sNicjai3KAQB6pG+I=
+		OCXIHGZGTpvOJxPqpkliO37SI70=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,17 +62,17 @@
 		</data>
 		<key>SLPhotosPickerViewController.nib/objects-14.0+.nib</key>
 		<data>
-		TS08akFfmins5IofWc06UBgK/eA=
+		CGvwyQW3I+gyCKkrIOTqplTvBVY=
 		</data>
 		<key>SLPhotosPickerViewController.nib/runtime.nib</key>
 		<data>
-		Q1G0Fa4t3UZY9fH02JOJaT0nv/Y=
+		1vhu0MSEGbHUrQZ7mJ8iG6/a4IM=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DZ+YJ436GM1u/Z7y+svMbfP+FPo=
+			xzkATZHhGpykNRVz+NCgEibM9hE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jUkCZEsaITKCt4g1kTfyTMdRcp8=
+			a2hHYjBAwPz8i6Tn2scazOcF1mc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TPSny0vrqL/qHQmrYimLXp8VCvIt4LwZnIE4tII9zFk=
+			TuB0VYZ6KHvohVbAhn6Ru0SXeXwGMbJm3YjqBjkVfow=
 			</data>
 		</dict>
 		<key>Headers/ShopLiveShortformEditorSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yOWqVA3iQnHXQWRl8Oat9Qk5QmSfipBF6SQgS6qa9sg=
+			MGW5D27ae2XJSRKsNH0YaBFUO50o4bzKHmXZFNr+iC4=
 			</data>
 		</dict>
 		<key>Headers/matrix_shortform_editor_ios.h</key>
@@ -114,35 +114,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			30eTrdKmLa8avuqcHHybVzN6hr4N1ZnqWfejsWOF6Bc=
+			RQQWuPUZXITRVW20J9mfCyA/4r0w8zrN2NTO5baia8E=
 			</data>
 		</dict>
 		<key>Modules/ShopLiveShortformEditorSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1gG1kzMO+KAp/dX+LkYPArAAYbA5kTa9iWTmW36vOYM=
+			xdW2qSxvSR7o/TPDpcAo8wGNM5EPUyRqlfCWmuhVGNs=
 			</data>
 		</dict>
 		<key>Modules/ShopLiveShortformEditorSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OrFbrR/bQxU1BOesu3h3+WyWV6PM1fGZ1YcGfQ+Y9cY=
+			LHUPeoN+rUW88tbYeokkPsm81cbtCc1FQ2Jqt5fb/qo=
 			</data>
 		</dict>
 		<key>Modules/ShopLiveShortformEditorSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1gG1kzMO+KAp/dX+LkYPArAAYbA5kTa9iWTmW36vOYM=
+			xdW2qSxvSR7o/TPDpcAo8wGNM5EPUyRqlfCWmuhVGNs=
 			</data>
 		</dict>
 		<key>Modules/ShopLiveShortformEditorSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FmhN8ewM7GlFuJehR7Y0Shf1RS3uNWG2SWbjC240tOc=
+			ZC8yfmB63B9rrb/S/9EXHAeIkjbObMPD2PIcUiTGQno=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -184,21 +184,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TzJ113AunjQ/1g8C2XWiYZ0gL69PFPLV7m+CKyWvlZw=
+			j5c5jisL/Sb23PfFQ/jKMAqzAEVR//pA4p0L8eLOQq4=
 			</data>
 		</dict>
 		<key>SLPhotosPickerViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t9rZJ/PU+eFihWS7yFpr4PatElHSBS1UuWNfjmTMta0=
+			Bb1/rtiQdzGWiHqd+ZdvbP2f3OozJcUC8eN9FtQDb2Y=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dhf8ZVdY8XS4pwyIQwDttJFSKxxFt/20ElXojgT/S2k=
+			9Qnmj1gwG0aIjzIKhVRdCv7rduhIAq1d5UfZjaWJS8w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -207,7 +207,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EaJqegdHV5qO0h6Tr2vX4AynVoFKESTFLfiPc3BUN18=
+			cj/yNapZAkHGHXWQ/+iUN2ZAlX9bIoGThd7C9Jg3iRs=
 			</data>
 			<key>optional</key>
 			<true/>

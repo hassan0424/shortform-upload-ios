@@ -264,7 +264,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import ObjectiveC;
 @import Photos;
-@import PhotosUI;
 @import ShopliveSDKCommon;
 @import UIKit;
 #endif
@@ -344,7 +343,6 @@ SWIFT_CLASS("_TtC26ShopLiveShortformEditorSDK25SLCollectionTableViewCell")
 @class PHLivePhotoView;
 @class UIActivityIndicatorView;
 @class NSLayoutConstraint;
-@class AVPlayer;
 @class PHAsset;
 
 SWIFT_CLASS("_TtC26ShopLiveShortformEditorSDK25SLPhotoCollectionViewCell")
@@ -361,7 +359,6 @@ SWIFT_CLASS("_TtC26ShopLiveShortformEditorSDK25SLPhotoCollectionViewCell")
 @property (nonatomic, strong) IBOutlet UILabel * _Nullable orderLabel;
 @property (nonatomic, strong) IBOutlet UIView * _Nullable orderBgView;
 @property (nonatomic) BOOL isCameraCell;
-@property (nonatomic, strong) AVPlayer * _Nullable player;
 @property (nonatomic) BOOL selectedAsset;
 - (NSString * _Nonnull)timeFormattedWithTimeInterval:(NSTimeInterval)timeInterval SWIFT_WARN_UNUSED_RESULT;
 - (void)popScaleAnim;
@@ -397,21 +394,18 @@ SWIFT_CLASS("_TtC26ShopLiveShortformEditorSDK28SLPhotosPickerViewController")
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified emptyImageView;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified emptyMessageLabel;
 @property (nonatomic, strong) IBOutlet UIBarButtonItem * _Null_unspecified photosButton;
-@property (nonatomic, copy) BOOL (^ _Nullable canSelectAsset)(PHAsset * _Nonnull);
-@property (nonatomic, copy) void (^ _Nullable didExceedMaximumNumberOfSelection)(SLPhotosPickerViewController * _Nonnull);
-@property (nonatomic, copy) void (^ _Nullable dismissCompletion)(void);
+@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithPHAssets:(void (^ _Nullable)(NSArray<PHAsset *> * _Nonnull))withPHAssets didCancel:(void (^ _Nullable)(void))didCancel;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
-- (void)didReceiveMemoryWarning;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewWillAppear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
+
 
 @protocol UIBarPositioning;
 
@@ -421,11 +415,6 @@ SWIFT_CLASS("_TtC26ShopLiveShortformEditorSDK28SLPhotosPickerViewController")
 
 
 
-@interface SLPhotosPickerViewController (SWIFT_EXTENSION(ShopLiveShortformEditorSDK)) <SLLoadingAlertControllerDelegate>
-- (void)finishLoading;
-- (void)cancelLoading;
-@end
-
 @class PHChange;
 
 @interface SLPhotosPickerViewController (SWIFT_EXTENSION(ShopLiveShortformEditorSDK)) <PHPhotoLibraryChangeObserver>
@@ -433,47 +422,22 @@ SWIFT_CLASS("_TtC26ShopLiveShortformEditorSDK28SLPhotosPickerViewController")
 @end
 
 
-@class UIScrollView;
-
-@interface SLPhotosPickerViewController (SWIFT_EXTENSION(ShopLiveShortformEditorSDK))
-- (void)scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
-- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
+@interface SLPhotosPickerViewController (SWIFT_EXTENSION(ShopLiveShortformEditorSDK)) <SLLoadingAlertControllerDelegate>
+- (void)finishLoading;
+- (void)cancelLoading;
 @end
 
-@protocol UIViewControllerPreviewing;
-@class NSIndexPath;
-@class UIContextMenuConfiguration;
-
-@interface SLPhotosPickerViewController (SWIFT_EXTENSION(ShopLiveShortformEditorSDK)) <UIViewControllerPreviewingDelegate>
-- (UIViewController * _Nullable)previewingContext:(id <UIViewControllerPreviewing> _Nonnull)previewingContext viewControllerForLocation:(CGPoint)location SWIFT_WARN_UNUSED_RESULT;
-- (void)previewingContext:(id <UIViewControllerPreviewing> _Nonnull)previewingContext commitViewController:(UIViewController * _Nonnull)viewControllerToCommit;
-- (UIContextMenuConfiguration * _Nullable)collectionView:(UICollectionView * _Nonnull)collectionView contextMenuConfigurationForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath point:(CGPoint)point SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=13.0);
-@end
-
-@class UICollectionReusableView;
-@class UICollectionViewLayout;
-
-@interface SLPhotosPickerViewController (SWIFT_EXTENSION(ShopLiveShortformEditorSDK)) <UICollectionViewDelegateFlowLayout>
-- (UICollectionReusableView * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView viewForSupplementaryElementOfKind:(NSString * _Nonnull)kind atIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface SLPhotosPickerViewController (SWIFT_EXTENSION(ShopLiveShortformEditorSDK)) <PHLivePhotoViewDelegate>
-- (void)livePhotoView:(PHLivePhotoView * _Nonnull)livePhotoView didEndPlaybackWithStyle:(PHLivePhotoViewPlaybackStyle)playbackStyle;
-- (void)livePhotoView:(PHLivePhotoView * _Nonnull)livePhotoView willBeginPlaybackWithStyle:(PHLivePhotoViewPlaybackStyle)playbackStyle;
-@end
 
 @class UITableView;
+@class NSIndexPath;
 
 @interface SLPhotosPickerViewController (SWIFT_EXTENSION(ShopLiveShortformEditorSDK)) <UITableViewDataSource, UITableViewDelegate>
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
 @end
+
 
 @class UIImagePickerController;
 
@@ -503,6 +467,7 @@ SWIFT_CLASS("_TtC26ShopLiveShortformEditorSDK28SLPhotosPickerViewController")
 - (IBAction)limitButtonTap;
 @end
 
+@class AVPlayer;
 @class AVPlayerLayer;
 
 SWIFT_CLASS("_TtC26ShopLiveShortformEditorSDK12SLPlayerView")
@@ -592,10 +557,10 @@ SWIFT_CLASS("_TtC26ShopLiveShortformEditorSDK13SLWSTagsField")
 @end
 
 
-
 @interface SLWSTagsField (SWIFT_EXTENSION(ShopLiveShortformEditorSDK))
 - (UIView * _Nullable)hitTest:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 @interface SLWSTagsField (SWIFT_EXTENSION(ShopLiveShortformEditorSDK)) <UITextFieldDelegate>
@@ -612,7 +577,6 @@ SWIFT_CLASS("_TtC26ShopLiveShortformEditorSDK13SLWSTagsField")
 @interface SLWSTagsField (SWIFT_EXTENSION(ShopLiveShortformEditorSDK))
 @property (nonatomic, readonly, strong) UIView * _Nullable inputAccessoryView SWIFT_DEPRECATED_MSG("Use 'inputFieldAccessoryView' instead");
 @end
-
 
 
 

@@ -1,8 +1,7 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ShopLiveShortformEditorSDK
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ShopLiveShortformEditorSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
-import AVFoundation
 import AVKit
 import Foundation
 import MobileCoreServices
@@ -15,8 +14,10 @@ import VideoToolbox
 import _Concurrency
 import _StringProcessing
 import ffmpegkit
-public protocol ShopLiveShortformEditorDelegate {
+public protocol ShopLiveShortformEditorDelegate : AnyObject {
   func onShortformUploadError(error: ShopLiveShortformEditorSDK.ShortsUploadError)
+  func onShortformEditorSuccess()
+  func onShortformEditorMediaPickerDismiss()
 }
 public struct SLWSTagAcceptOption : Swift.OptionSet {
   public let rawValue: Swift.Int
@@ -284,10 +285,16 @@ public struct ShortsModel : ShopliveSDKCommon.BaseResponsable, Swift.Equatable {
   }
   public func encode(to encoder: any Swift.Encoder) throws
 }
-@_hasMissingDesignatedInitializers public class ShopLiveShortformEditor {
+public class ShopLiveShortformEditor {
   public static var sdkVersion: Swift.String
-  public static func start(_ vc: UIKit.UIViewController, permissionHandler: (any ShopliveSDKCommon.ShopLivePermissionHandler)? = nil, configuration: ShopLiveShortformEditorSDK.ShopLiveShortformEditorConfiguration?)
-  public static func setShortFormEditorDelegate(delegate: any ShopLiveShortformEditorSDK.ShopLiveShortformEditorDelegate)
+  public init()
+  @discardableResult
+  public func setPermissionHandler(_ permissionHandler: (any ShopliveSDKCommon.ShopLivePermissionHandler)?) -> Self
+  @discardableResult
+  public func setConfiguration(_ configuration: ShopLiveShortformEditorSDK.ShopLiveShortformEditorConfiguration?) -> Self
+  @discardableResult
+  public func setShortFormEditorDelegate(delegate: any ShopLiveShortformEditorSDK.ShopLiveShortformEditorDelegate) -> Self
+  public func start(_ vc: UIKit.UIViewController)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class VideoPlayer : ObjectiveC.NSObject {
@@ -313,6 +320,10 @@ public enum PHFetchedResultGroupedBy {
   case day
   case hour
   case custom(dateFormat: Swift.String)
+}
+extension ShopLiveShortformEditorSDK.SLPhotosPickerViewController : ShopliveSDKCommon.SLLoadingAlertControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func finishLoading()
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func cancelLoading()
 }
 @_hasMissingDesignatedInitializers public class ShortFormUploadConfigurationInfosManager {
   public static let shared: ShopLiveShortformEditorSDK.ShortFormUploadConfigurationInfosManager
@@ -522,10 +533,6 @@ public struct SLAssetsCollection {
     get
     set
   }
-  @objc @_Concurrency.MainActor(unsafe) open var player: AVFoundation.AVPlayer? {
-    @objc get
-    @objc set
-  }
   @objc @_Concurrency.MainActor(unsafe) open var selectedAsset: Swift.Bool {
     @objc get
     @objc set
@@ -553,33 +560,6 @@ public struct SLAssetsCollection {
     set
   }
 }
-public protocol SLPhotosPickerViewControllerDelegate : AnyObject {
-  func dismissPhotoPicker(withPHAssets: [Photos.PHAsset])
-  func dismissPhotoPicker(withSLPHAssets: [ShopLiveShortformEditorSDK.SLPHAsset])
-  func shouldDismissPhotoPicker(withSLPHAssets: [ShopLiveShortformEditorSDK.SLPHAsset]) -> Swift.Bool
-  func dismissComplete()
-  func photoPickerDidCancel()
-  func canSelectAsset(phAsset: Photos.PHAsset) -> Swift.Bool
-  func didExceedMaximumNumberOfSelection(picker: ShopLiveShortformEditorSDK.SLPhotosPickerViewController)
-  func handleAlbumPermissions(picker: ShopLiveShortformEditorSDK.SLPhotosPickerViewController, status: ShopliveSDKCommon.PermissionStatus)
-  func handleCameraPermissions(picker: ShopLiveShortformEditorSDK.SLPhotosPickerViewController, status: ShopliveSDKCommon.PermissionStatus)
-}
-extension ShopLiveShortformEditorSDK.SLPhotosPickerViewControllerDelegate {
-  public func deninedAuthoization()
-  public func dismissPhotoPicker(withPHAssets: [Photos.PHAsset])
-  public func dismissPhotoPicker(withSLPHAssets: [ShopLiveShortformEditorSDK.SLPHAsset])
-  public func shouldDismissPhotoPicker(withSLPHAssets: [ShopLiveShortformEditorSDK.SLPHAsset]) -> Swift.Bool
-  public func dismissComplete()
-  public func photoPickerDidCancel()
-  public func canSelectAsset(phAsset: Photos.PHAsset) -> Swift.Bool
-  public func didExceedMaximumNumberOfSelection(picker: ShopLiveShortformEditorSDK.SLPhotosPickerViewController)
-}
-public protocol SLPhotosPickerLogDelegate : AnyObject {
-  func selectedCameraCell(picker: ShopLiveShortformEditorSDK.SLPhotosPickerViewController)
-  func deselectedPhoto(picker: ShopLiveShortformEditorSDK.SLPhotosPickerViewController, at: Swift.Int)
-  func selectedPhoto(picker: ShopLiveShortformEditorSDK.SLPhotosPickerViewController, at: Swift.Int)
-  func selectedAlbum(picker: ShopLiveShortformEditorSDK.SLPhotosPickerViewController, title: Swift.String, at: Swift.Int)
-}
 public struct SLPhotosPickerConfigure {
   public var customLocalizedTitle: [Swift.String : Swift.String]
   public var tapHereToChange: Swift.String
@@ -592,17 +572,11 @@ public struct SLPhotosPickerConfigure {
   public var usedCameraButton: Swift.Bool
   public var defaultToFrontFacingCamera: Swift.Bool
   public var usedPrefetch: Swift.Bool
-  public var previewAtForceTouch: Swift.Bool
-  public var startplayBack: PhotosUI.PHLivePhotoViewPlaybackStyle
-  public var allowedLivePhotos: Swift.Bool
   public var allowedVideo: Swift.Bool
   public var allowedAlbumCloudShared: Swift.Bool
-  public var allowedPhotograph: Swift.Bool
   public var allowedVideoRecording: Swift.Bool
   public var recordingVideoQuality: UIKit.UIImagePickerController.QualityType
   public var maxVideoDuration: Foundation.TimeInterval?
-  public var autoPlay: Swift.Bool
-  public var muteAudio: Swift.Bool
   public var preventAutomaticLimitedAccessAlert: Swift.Bool
   public var mediaType: Photos.PHAssetMediaType?
   public var numberOfColumn: Swift.Int
@@ -616,9 +590,6 @@ public struct SLPhotosPickerConfigure {
   public var selectedColor: UIKit.UIColor
   public var cameraBgColor: UIKit.UIColor
   public var cameraIcon: UIKit.UIImage?
-  public var nibSet: (nibName: Swift.String, bundle: Foundation.Bundle)?
-  public var cameraCellNibSet: (nibName: Swift.String, bundle: Foundation.Bundle)?
-  public var fetchCollectionTypes: [(Photos.PHAssetCollectionType, Photos.PHAssetCollectionSubtype)]?
   public var groupByFetch: ShopLiveShortformEditorSDK.PHFetchedResultGroupedBy?
   public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask
   public var popup: [ShopLiveShortformEditorSDK.PopupConfigure]
@@ -662,32 +633,25 @@ public struct Platform {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) weak public var delegate: (any ShopLiveShortformEditorSDK.SLPhotosPickerViewControllerDelegate)?
-  @_Concurrency.MainActor(unsafe) weak public var logDelegate: (any ShopLiveShortformEditorSDK.SLPhotosPickerLogDelegate)?
   @_Concurrency.MainActor(unsafe) open var selectedAssets: [ShopLiveShortformEditorSDK.SLPHAsset]
   @_Concurrency.MainActor(unsafe) open var isSelectedFromCamera: Swift.Bool
   @_Concurrency.MainActor(unsafe) public var configure: ShopLiveShortformEditorSDK.SLPhotosPickerConfigure
-  @_Concurrency.MainActor(unsafe) public var customDataSouces: (any ShopLiveShortformEditorSDK.SLPhotopickerDataSourcesProtocol)?
-  @objc @_Concurrency.MainActor(unsafe) open var canSelectAsset: ((Photos.PHAsset) -> Swift.Bool)?
-  @objc @_Concurrency.MainActor(unsafe) open var didExceedMaximumNumberOfSelection: ((ShopLiveShortformEditorSDK.SLPhotosPickerViewController) -> Swift.Void)?
-  @objc @_Concurrency.MainActor(unsafe) open var dismissCompletion: (() -> Swift.Void)?
-  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc dynamic public init()
-  @objc @_Concurrency.MainActor(unsafe) convenience public init(withPHAssets: (([Photos.PHAsset]) -> Swift.Void)? = nil, didCancel: (() -> Swift.Void)? = nil)
-  @_Concurrency.MainActor(unsafe) convenience public init(withSLPHAssets: (([ShopLiveShortformEditorSDK.SLPHAsset]) -> Swift.Void)? = nil, didCancel: (() -> Swift.Void)? = nil)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
     @objc get
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didReceiveMemoryWarning()
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @objc deinit
   @_Concurrency.MainActor(unsafe) open func deselectWhenUsingSingleSelectedMode()
   @_Concurrency.MainActor(unsafe) open func maxCheck() -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) open func singleSelected()
 }
 extension ShopLiveShortformEditorSDK.SLPhotosPickerViewController {
   @objc @_Concurrency.MainActor(unsafe) dynamic public func registerNib(nibName: Swift.String, bundle: Foundation.Bundle)
@@ -699,15 +663,7 @@ extension ShopLiveShortformEditorSDK.SLPhotosPickerViewController {
 extension ShopLiveShortformEditorSDK.SLPhotosPickerViewController : UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic open func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
   @_Concurrency.MainActor(unsafe) @objc dynamic open func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
-  @_Concurrency.MainActor(unsafe) public func dismissPicker()
-}
-extension ShopLiveShortformEditorSDK.SLPhotosPickerViewController {
-  @_Concurrency.MainActor(unsafe) @objc dynamic open func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc dynamic open func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
-}
-extension ShopLiveShortformEditorSDK.SLPhotosPickerViewController : PhotosUI.PHLivePhotoViewDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func livePhotoView(_ livePhotoView: PhotosUI.PHLivePhotoView, didEndPlaybackWith playbackStyle: PhotosUI.PHLivePhotoViewPlaybackStyle)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func livePhotoView(_ livePhotoView: PhotosUI.PHLivePhotoView, willBeginPlaybackWith playbackStyle: PhotosUI.PHLivePhotoViewPlaybackStyle)
+  @_Concurrency.MainActor(unsafe) public func dismissPicker(completion: (() -> ())?)
 }
 extension ShopLiveShortformEditorSDK.SLPhotosPickerViewController : Photos.PHPhotoLibraryChangeObserver {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func photoLibraryDidChange(_ changeInstance: Photos.PHChange)
@@ -722,35 +678,14 @@ extension ShopLiveShortformEditorSDK.SLPhotosPickerViewController : UIKit.UIColl
   @_Concurrency.MainActor(unsafe) @objc dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, cancelPrefetchingForItemsAt indexPaths: [Foundation.IndexPath])
   @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, willDisplay cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
 }
-extension ShopLiveShortformEditorSDK.SLPhotosPickerViewController : UIKit.UICollectionViewDelegateFlowLayout {
-  @_Concurrency.MainActor(unsafe) @objc dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
-  @_Concurrency.MainActor(unsafe) @objc dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForHeaderInSection section: Swift.Int) -> CoreFoundation.CGSize
-  @_Concurrency.MainActor(unsafe) @objc dynamic open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForFooterInSection section: Swift.Int) -> CoreFoundation.CGSize
-}
 extension ShopLiveShortformEditorSDK.SLPhotosPickerViewController : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
   @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
   @_Concurrency.MainActor(unsafe) @objc dynamic open func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
   @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
   @_Concurrency.MainActor(unsafe) @objc dynamic open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
-    @objc get
-  }
-}
-extension ShopLiveShortformEditorSDK.SLPhotosPickerViewController : UIKit.UIViewControllerPreviewingDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func previewingContext(_ previewingContext: any UIKit.UIViewControllerPreviewing, viewControllerForLocation location: CoreFoundation.CGPoint) -> UIKit.UIViewController?
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func previewingContext(_ previewingContext: any UIKit.UIViewControllerPreviewing, commit viewControllerToCommit: UIKit.UIViewController)
-  @available(iOS 13.0, *)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, contextMenuConfigurationForItemAt indexPath: Foundation.IndexPath, point: CoreFoundation.CGPoint) -> UIKit.UIContextMenuConfiguration?
 }
 extension ShopLiveShortformEditorSDK.SLPhotosPickerViewController : UIKit.UINavigationBarDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func position(for bar: any UIKit.UIBarPositioning) -> UIKit.UIBarPosition
-}
-extension UIKit.UIImage {
-  public func colorMask(color: UIKit.UIColor) -> UIKit.UIImage
-}
-extension ShopLiveShortformEditorSDK.SLPhotosPickerViewController : ShopliveSDKCommon.SLLoadingAlertControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic open func finishLoading()
-  @_Concurrency.MainActor(unsafe) @objc dynamic open func cancelLoading()
 }
 @_hasMissingDesignatedInitializers open class SLBundle {
   open class func slPhotoPickerBundleImage() -> UIKit.UIImage?
@@ -764,18 +699,29 @@ extension ShopLiveShortformEditorSDK.SLPhotosPickerViewController : ShopliveSDKC
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func paste(_ sender: Any?)
   @objc deinit
 }
-public enum ShopLiveShortformEditorVideoCropOption {
-  case fixedRatio
-  case notFixed
-  public static func == (a: ShopLiveShortformEditorSDK.ShopLiveShortformEditorVideoCropOption, b: ShopLiveShortformEditorSDK.ShopLiveShortformEditorVideoCropOption) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
+final public class ShopLiveShortFormEditorAspectRatio {
+  final public var width: Swift.Int
+  final public var height: Swift.Int
+  final public var isFixed: Swift.Bool
+  public init(width: Swift.Int = 9, height: Swift.Int = 16, isFixed: Swift.Bool = true)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class ShopLiveShortFormEditorTrimOption {
+  final public var maxVideoDuration: CoreFoundation.CGFloat
+  final public var minVideoDuration: CoreFoundation.CGFloat
+  @objc deinit
+}
+final public class ShopLiveShortFormEditorVisibleContent {
+  final public var isDescriptionVisible: Swift.Bool
+  final public var isTagsVisible: Swift.Bool
+  public init(isDescriptionVisible: Swift.Bool = true, isTagsVisible: Swift.Bool = true)
+  @objc deinit
 }
 final public class ShopLiveShortformEditorConfiguration {
-  final public var videoCropOption: ShopLiveShortformEditorSDK.ShopLiveShortformEditorVideoCropOption
-  public init(videoCropOption: ShopLiveShortformEditorSDK.ShopLiveShortformEditorVideoCropOption)
+  final public var videoCropOption: ShopLiveShortformEditorSDK.ShopLiveShortFormEditorAspectRatio
+  final public var visibleContents: ShopLiveShortformEditorSDK.ShopLiveShortFormEditorVisibleContent
+  final public var videoTrimOption: ShopLiveShortformEditorSDK.ShopLiveShortFormEditorTrimOption
+  public init(videoCropOption: ShopLiveShortformEditorSDK.ShopLiveShortFormEditorAspectRatio, visibleContents: ShopLiveShortformEditorSDK.ShopLiveShortFormEditorVisibleContent?, minVideoDuration: CoreFoundation.CGFloat? = nil, maxVideoDuration: CoreFoundation.CGFloat? = nil)
   @objc deinit
 }
 extension ShopLiveShortformEditorSDK.SLPHAsset.AssetType : Swift.Equatable {}
@@ -783,5 +729,3 @@ extension ShopLiveShortformEditorSDK.SLPHAsset.AssetType : Swift.Hashable {}
 extension ShopLiveShortformEditorSDK.SLPHAsset.ImageExtType : Swift.Equatable {}
 extension ShopLiveShortformEditorSDK.SLPHAsset.ImageExtType : Swift.Hashable {}
 extension ShopLiveShortformEditorSDK.SLPHAsset.ImageExtType : Swift.RawRepresentable {}
-extension ShopLiveShortformEditorSDK.ShopLiveShortformEditorVideoCropOption : Swift.Equatable {}
-extension ShopLiveShortformEditorSDK.ShopLiveShortformEditorVideoCropOption : Swift.Hashable {}
